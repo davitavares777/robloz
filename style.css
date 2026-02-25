@@ -1,0 +1,44 @@
+body{
+    display: grid;
+    grid-template-areas: "cabeca cabeca" "braco corpo" "peh peh";
+    grid-template-rows: 200px 500px 100px;
+    grid-template-columns: 1fr 2fr;
+}
+header{
+    grid-area: cabeca;
+    background-color: darkcyan;
+}
+aside{
+    grid-area: braco;
+    background-color: darkgoldenrod;
+}
+main{
+    grid-area: corpo;
+    background-color: aquamarine;
+}
+footer{
+    grid-area: peh;
+    background-color: blanchedalmond;
+}
+@MEDIA only screen and (max-width:850px){
+    body{
+        display: grid;
+        grid-template-areas: "cabeca" "braco" "corpo" "peh";
+        grid-template-rows: 100px auto 500px 100px;
+        grid-template-columns: auto;
+    }
+    .letra{color: chartreuse;
+    background-color: aquamarine;
+    }
+}
+@media only screen and (max-width:450px){
+    body{
+        display: grid;
+        grid-template-areas:"cabeca" "corpo" "peh";
+        grid-template-rows: 100px 450px 100px;
+        grid-template-columns: auto;
+    }
+    aside{
+        display: none;
+    }
+}
