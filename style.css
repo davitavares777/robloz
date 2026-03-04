@@ -10,7 +10,7 @@ header{
 }
 aside{
     grid-area: braco;
-    background-color: darkgoldenrod;
+    background-color: rgba(211, 158, 42, 0.76);
 }
 main{
     grid-area: corpo;
@@ -41,4 +41,18 @@ footer{
     aside{
         display: none;
     }
+}
+.card{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border: red 2px solid;
+    background-color: aliceblue;
+    width: 400px;
+    height: 650px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
 }
