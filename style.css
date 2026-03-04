@@ -1,8 +1,8 @@
 body{
     display: grid;
     grid-template-areas: "cabeca cabeca" "braco corpo" "peh peh";
-    grid-template-rows: 200px 500px 100px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 200px auto 100px;
+    grid-template-columns: 1fr 4fr;
 }
 header{
     grid-area: cabeca;
@@ -46,13 +46,43 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
     align-items: center;
     border: red 2px solid;
     background-color: aliceblue;
     width: 400px;
-    height: 650px;
+    height: 500px;
     border-radius: 20px;
     text-align: center;
     margin: 10px;
+}
+.cityboy{
+    width: 300px;
+}
+.descricao{
+    color: chocolate;
+    font-size: x-large;
+}
+.preco{
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+}
+.botao{ 
+    font-size: large;
+    background-color: cadetblue;
+    width: 50%;
+    text-decoration: none;
+    height: 50px;
+    border-radius: 20px;
+}
+.letra_botao{
+ display: block;
+ text-align: center;
+ text-decoration: none;
+ color: antiquewhite; 
+}
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
