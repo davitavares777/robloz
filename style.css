@@ -6,11 +6,12 @@ body{
 }
 header{
     grid-area: cabeca;
-    background-color: rgb(150, 104, 5);
+    background-color: rgb(253, 245, 226);
+
 }
 aside{
     grid-area: braco;
-    background-color: rgb(236, 140, 29);
+    background-color: rgb(236, 169, 93);
 }
 main{
     grid-area: corpo;
@@ -19,6 +20,10 @@ main{
 footer{
     grid-area: peh;
     background-color: rgb(255, 194, 101);
+}
+.logo{
+    width: 150px;
+    height: 150px;
 }
 @MEDIA only screen and (max-width:850px){
     body{
@@ -29,6 +34,10 @@ footer{
     }
     .letra{color: chartreuse;
     background-color: aquamarine;
+    }
+    .logo{
+        width:125px;
+        height:125px;
     }
 }
 @media only screen and (max-width:450px){
@@ -41,6 +50,9 @@ footer{
     aside{
         display: none;
     }
+    .logo{width:100px;
+    height: 100px;
+}
 }
 .card{ 
     display: flex;
@@ -48,16 +60,16 @@ footer{
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-    border: red 2px solid;
-    background-color: aliceblue;
-    width: 300px;
-    height: 400px;
-    border-radius: 20px;
+    border: #ffa600 2px solid;
+    background-color: rgb(255, 255, 255);
+    width: 325px;
+    height: 450px;
+    border-radius:5px;
     text-align: center;
     margin: 10px;
 }
 .cappucino{
-    width: 75px;
+    width: 80px;
     
 }
 .descricao{
@@ -70,17 +82,17 @@ footer{
 }
 .botao{ 
     font-size: large;
-    background-color: cadetblue;
+    background-color: rgb(255, 208, 78);
     width: 50%;
     text-decoration: none;
     height: 35px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .letra_botao{
  display: block;
  text-align: center;
  text-decoration: none;
- color: antiquewhite; 
+ color: rgb(19, 1, 1); 
 }
 .mae{
     display: flex;
