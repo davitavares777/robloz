@@ -1,0 +1,121 @@
+body{
+    display: grid;
+    grid-template-areas: "cabeca cabeca" "braco corpo" "peh peh";
+    grid-template-rows: 200px auto 100px;
+    grid-template-columns: 1fr 4fr;
+}
+header{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: cabeca;
+    background-color: rgb(253, 245, 226);
+    position: relative;
+}
+aside{
+    grid-area: braco;
+    background-color: rgb(236, 169, 93);
+}
+main{
+    grid-area: corpo;
+    background-color: rgb(240, 212, 90);
+}
+footer{
+    grid-area: peh;
+    background-color: rgb(255, 194, 101);
+}
+.logo{
+    width: 150px;
+    height: 150px;
+}
+@MEDIA only screen and (max-width:850px){
+    body{
+        display: grid;
+        grid-template-areas: "cabeca" "braco" "corpo" "peh";
+        grid-template-rows:200px 100px auto 200px;
+        grid-template-columns: auto;
+    }
+    .letra{color: chartreuse;
+    background-color: aquamarine;
+    }
+.logo{
+    width: 125px;
+    height: 125px;
+}
+}
+@media only screen and (max-width:450px){
+    body{
+        display: grid;
+        grid-template-areas:"cabeca" "corpo" "peh";
+        grid-template-rows: 100px auto 100px;
+        grid-template-columns: auto;
+    }
+    aside{
+        display: none;
+    }
+    .logo{width:100px;
+    height: 100px;
+}
+.login{
+    width: 100px;
+}
+}
+.card{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border: #ffa600 2px solid;
+    background-color: rgb(255, 255, 255);
+    width: 325px;
+    height: 450px;
+    border-radius:5px;
+    text-align: center;
+    margin: 10px;
+}
+.cappucino{
+    width: 80px;
+    
+}
+.macha{
+    width: 200px;
+}
+.cafecaro{
+    width: 205px;
+}
+.cafecarodms{
+    width: 300px;
+}
+.login{
+    width: 85px;
+    position: absolute;
+    right: 200px;
+    }
+.descricao{
+    color: chocolate;
+    font-size: x-large;
+}
+.preco{
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+}
+.botao{ 
+    font-size: large;
+    background-color: rgb(255, 208, 78);
+    width: 50%;
+    text-decoration: none;
+    height: 35px;
+    border-radius: 10px;
+}
+.letra_botao{
+ display: block;
+ text-align: center;
+ text-decoration: none;
+ color: rgb(19, 1, 1); 
+}
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
