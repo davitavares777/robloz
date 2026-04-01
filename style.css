@@ -7,7 +7,6 @@ body{
 header{
     grid-area: cabeca;
     background-color: rgb(253, 245, 226);
-
 }
 aside{
     grid-area: braco;
@@ -25,6 +24,10 @@ footer{
     width: 150px;
     height: 150px;
 }
+.login{
+    height: 100px;
+    width: 100px;
+}
 @MEDIA only screen and (max-width:850px){
     body{
         display: grid;
@@ -36,8 +39,8 @@ footer{
     background-color: aquamarine;
     }
     .logo{
-        width:125px;
-        height:125px;
+        width: 135px;
+        height:135px;
     }
 }
 @media only screen and (max-width:450px){
@@ -71,7 +74,6 @@ footer{
 .cappucino{
     width: 80px;
     
-    
 }
 .macha{
     width: 200px;
@@ -97,6 +99,10 @@ footer{
     text-decoration: none;
     height: 35px;
     border-radius: 10px;
+}
+.saibamais{
+    width: 100px;
+    height: 100px;
 }
 .letra_botao{
  display: block;
