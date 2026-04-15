@@ -11,7 +11,7 @@ header{
 main{
     grid-area: corpo;
     background-color: rgba(238, 161, 37, 0.995);
-    font-size: medium;
+    font-size: x-large;
 }
 
 @MEDIA only screen and (max-width:850px){

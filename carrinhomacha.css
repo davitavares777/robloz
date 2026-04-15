@@ -1,7 +1,8 @@
 body{
     display: grid;
     grid-template-areas: "cabeca cabeca" "corpo corpo" "peh peh";
-    grid-template-rows: 200px auto auto;
+    grid-template-rows: 200px 500px auto
+    ;
     grid-template-columns: 1fr 4fr;
 }
 header{
@@ -43,15 +44,15 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    background-color: 5#05ff7e
+    height: 200px;
+    background-color: #05ff7e
 }
 @media only screen and (max-width: 850px) {
     .item {
         width: 45%;
     }
     .finalizar {
-        width: 60%;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 450px) {
@@ -66,7 +67,7 @@ button {
         width: 90%;
     }
     .finalizar {
-        width: 90%;
+        width: 100%;
     }
 }
 .cappucino{
