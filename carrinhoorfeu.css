@@ -1,0 +1,79 @@
+body{
+    display: grid;
+    grid-template-areas: "cabeca cabeca" "corpo corpo" "peh peh";
+    grid-template-rows: 200px auto auto;
+    grid-template-columns: 1fr 4fr;
+}
+header{
+    grid-area: cabeca;
+    background-color: rgb(62, 178, 52);
+}
+    main{
+    grid-area: corpo;
+    background-color: rgb(78, 114, 20);
+}
+.carrinho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(78, 114, 20);
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    background-color: white;
+    border: 2px solid #000000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+button {
+    background-color: rgb(173, 33, 33);
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.finalizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #ffdf00
+}
+@media only screen and (max-width: 850px) {
+    .item {
+        width: 45%;
+    }
+    .finalizar {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    header {
+        text-align: center;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    .item {
+        width: 90%;
+    }
+    .finalizar {
+        width: 90%;
+    }
+}
+.cappucino{
+    width: 200px;
+    height: 200px;
+}
+.logo{
+    width: 250px;
+    height: 250px;
+}

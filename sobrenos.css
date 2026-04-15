@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    grid-template-areas: "cabeca cabeca""corpo corpo";
+    grid-template-rows: 200px auto;
+    grid-template-columns: 1fr 2fr;
+}
+header{
+    grid-area: cabeca;
+    background-color:rgb(255, 145, 0)
+}
+main{
+    grid-area: corpo;
+    background-color: rgba(238, 161, 37, 0.995);
+    font-size: medium;
+}
+
+@MEDIA only screen and (max-width:850px){
+    body{
+        display: grid;
+        grid-template-areas: "cabeca" "corpo";
+        grid-template-rows: 200px auto ;
+        grid-template-columns: auto;
+    }
+    .letra{color: chartreuse;
+    background-color: aquamarine;
+    }
+    .logo{
+        width:100px;
+        height:100px;
+    }
+    
+}
+@media only screen and (max-width:450px){
+    body{
+        display: grid;
+        grid-template-areas:"cabeca" "corpo" ;
+        grid-template-rows: 1000x auto ;
+        grid-template-columns: auto;
+    }
+    }
+    .logo{width:50px;
+    height: 50px;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}

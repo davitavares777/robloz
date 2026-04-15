@@ -1,7 +1,7 @@
 body{
     display: grid;
-    grid-template-areas: "cabeca cabeca" "braco corpo" "peh peh";
-    grid-template-rows: 200px auto 100px;
+    grid-template-areas: "cabeca cabeca" "corpo corpo" "peh peh";
+    grid-template-rows: 200px auto auto;
     grid-template-columns: 1fr 4fr;
 }
 header{
@@ -32,7 +32,7 @@ footer{
     body{
         display: grid;
         grid-template-areas: "cabeca" "braco" "corpo" "peh";
-        grid-template-rows:200px 100px auto 200px;
+        grid-template-rows:200px 100px auto auto;
         grid-template-columns: auto;
     }
     .letra{color: chartreuse;
@@ -47,7 +47,7 @@ footer{
     body{
         display: grid;
         grid-template-areas:"cabeca" "corpo" "peh";
-        grid-template-rows: 100px auto 100px;
+        grid-template-rows: 100px auto auto;
         grid-template-columns: auto;
     }
     aside{
@@ -84,8 +84,11 @@ footer{
 .cafecarodms{
     width: 300px;
 }
+.chachines{
+    width: 200px;
+}
 .descricao{
-    color: chocolate;
+    color: rgb(0, 0, 0);
     font-size: x-large;
 }
 .preco{
@@ -97,13 +100,10 @@ footer{
     background-color: rgb(255, 208, 78);
     width: 50%;
     text-decoration: none;
-    height: 35px;
+    height: 40px;
     border-radius: 10px;
 }
-.saibamais{
-    width: 100px;
-    height: 100px;
-}
+
 .letra_botao{
  display: block;
  text-align: center;
@@ -114,4 +114,12 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.login {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    cursor: pointer;
 }

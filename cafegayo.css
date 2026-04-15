@@ -1,0 +1,95 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "cabeca"
+    "corpo"
+    "peh";
+    grid-template-rows: auto auto auto;
+}
+header{
+    grid-area: cabeca;
+    background-color: #efb810;
+}
+
+main{
+    grid-area: corpo;
+    background-color: rgba(0, 0, 0, 0.995);
+}
+
+footer{
+    grid-area: peh;
+    background-color: rgb(212, 175,55);
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+.card{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: #000000 2px solid;
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius:5px;
+    text-align: center;
+    margin: 10px;
+}
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card img{
+    width: 100%;
+    max-width: 200px;
+}
+.descricao{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.preco{
+    font-size: 18px;
+}
+.botao{ 
+    font-size: large;
+    background-color: #ffdf00;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.letra_botao{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-width:850px){
+
+    .logo{
+        width:100px;
+        height:100px;
+    }
+
+    .card{
+        max-width: 45%;
+    }
+}
+@media only screen and (max-width:450px){
+
+    .logo{
+        width:70px;
+        height:70px;
+    }
+
+    .card{
+        max-width: 90%;
+    }
+}
