@@ -6,28 +6,28 @@ body{
 }
 header{
     grid-area: cabeca;
-    background-color: rgb(253, 245, 226);
+    background-color: rgb(242, 206, 121);
 }
     main{
     grid-area: corpo;
-    background-color: rgb(240, 212, 90);
+    background-color: rgb(255, 209, 4);
 }
 .carrinho {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 200px;
-    background-color: #867c69;
+    gap: 50px;
+    background-color: #ffbd41;
 }
-.item {
+.item{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 280px;
+    width: 200px;
     background-color: white;
     border: 2px solid #ffa600;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
 }
@@ -43,7 +43,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 75px;
     background-color: #ffcf8b
 }
 @media only screen and (max-width: 850px) {
