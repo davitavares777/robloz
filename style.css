@@ -1,6 +1,6 @@
 body{
     display: grid;
-    grid-template-areas: "cabeca cabeca" "braco corpo" "peh peh";
+    grid-template-areas: "cabeca cabeca" "corpo corpo" "peh peh";
     grid-template-rows: 200px auto auto;
     grid-template-columns: 1fr 4fr;
 }
@@ -11,15 +11,6 @@ header{
 aside{
     grid-area: braco;
     background-color: rgb(236, 169, 93);
-    
-}
-.sbns{
-color: black;
-text-decoration: none;
-}
-.carrinhoa{
-    color: black;
-    text-decoration: none;
 }
 main{
     grid-area: corpo;
@@ -33,21 +24,9 @@ footer{
     width: 150px;
     height: 150px;
 }
-.login {
-    width: 100px;
+.login{
     height: 100px;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    cursor: pointer;
-}
-.carrinho{
     width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 50px;
-    right: 150px;
-    cursor: pointer;
 }
 @MEDIA only screen and (max-width:850px){
     body{
@@ -63,19 +42,6 @@ footer{
         width: 135px;
         height:135px;
     }
-    .login{
-        width: 75px;
-        height: 75px;
-    }
-    .carrinho{
-    width: 75px;
-    height: 75px;
-    position: absolute;
-    top: 50px;
-    right: 100px;
-    cursor: pointer;
-}
-
 }
 @media only screen and (max-width:450px){
     body{
@@ -87,21 +53,8 @@ footer{
     aside{
         display: none;
     }
-    .logo{
-    width:100px;
+    .logo{width:100px;
     height: 100px;
-}
-.login{
-    width: 45px;
-    height: 45px;
-}
-.carrinho{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 50px;
-    right: 75px;
-    cursor: pointer;
 }
 }
 .card{ 
@@ -149,7 +102,6 @@ footer{
     text-decoration: none;
     height: 40px;
     border-radius: 10px;
-    cursor: pointer;
 }
 
 .letra_botao{
@@ -162,4 +114,12 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.login {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    cursor: pointer;
 }
