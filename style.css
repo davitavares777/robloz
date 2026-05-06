@@ -24,9 +24,13 @@ footer{
     width: 150px;
     height: 150px;
 }
-.login{
-    height: 100px;
+.login {
     width: 100px;
+    height: 100x;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
 }
 @MEDIA only screen and (max-width:850px){
     body{
@@ -42,6 +46,12 @@ footer{
         width: 135px;
         height:135px;
     }
+    .login{
+        width: 75px;
+        height: 75px;
+        top: 30px;
+        right: 10px;
+    }
 }
 @media only screen and (max-width:450px){
     body{
@@ -53,8 +63,14 @@ footer{
     aside{
         display: none;
     }
-    .logo{width:100px;
+    .logo
+    {width:100px;
     height: 100px;
+}
+.login{
+    width: 50px;
+    height: 50px;
+    right: 0px;
 }
 }
 .card{ 
@@ -114,12 +130,4 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.login {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    cursor: pointer;
 }

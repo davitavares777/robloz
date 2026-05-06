@@ -1,16 +1,17 @@
-function aura() {
-    alert(dasddasdsadasdas)
+function busca_alunos() {
     fetch('json.json')
-    .then (response => respons.json())
-    .then(dadinho =>{
-        document.getElementsByClass('destino').innerHTML =
-        `<div class="card">
-            <img src="cafes/`+dadinho.imagem+`" class="chachines" alt="">
-            <p class="descricao">`+dadinho.nome+`</p>
-            <p class="preco">`+dadinho.aura+`</p>
-            <p class="botao" type butt><a class="letra_botao" href="chadaprod.html">`+dadinho.endereco+`saiba mais/adicionar ao carrinho</a ></p>
-            <button type="button" onclick="aura ()"></button>
-    </div>`;
-        
-    })
+    .then(response => response.json())
+    .then(dadinho => {
+        document.getElementById('espaco'). innerHTML =
+    `<div class="espaco">
+        <img src="json/img/`+dadinho.imagem+`" alt="">
+        <h3>`+dadinho.nome+`</h3>
+        <p>`+dadinho.descricao+`</p>
+        <a href="`+dadinho.endereco+`">
+            <button type="button">saiba mais</button>
+        </a>
+</div>`;
+
+       
+})
 }
