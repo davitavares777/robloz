@@ -1,7 +1,7 @@
 body{
     display: grid;
-    grid-template-areas: "cabeca cabeca" "braco corpo" "peh peh";
-    grid-template-rows: 200px auto 100px;
+    grid-template-areas: "cabeca cabeca" "corpo corpo" "peh peh";
+    grid-template-rows: 200px auto auto;
     grid-template-columns: 1fr 4fr;
 }
 header{
@@ -24,15 +24,19 @@ footer{
     width: 150px;
     height: 150px;
 }
-.login{
-    height: 100px;
-    width: 100px;
+.login {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    cursor: pointer;
 }
 @MEDIA only screen and (max-width:850px){
     body{
         display: grid;
         grid-template-areas: "cabeca" "braco" "corpo" "peh";
-        grid-template-rows:200px 100px auto 200px;
+        grid-template-rows:200px 100px auto auto;
         grid-template-columns: auto;
     }
     .letra{color: chartreuse;
@@ -42,18 +46,26 @@ footer{
         width: 135px;
         height:135px;
     }
+    .login{
+        width: 150px;
+        height: 150px;
+    }
 }
 @media only screen and (max-width:450px){
     body{
         display: grid;
         grid-template-areas:"cabeca" "corpo" "peh";
-        grid-template-rows: 100px auto 100px;
+        grid-template-rows: 100px auto auto;
         grid-template-columns: auto;
     }
     aside{
         display: none;
     }
     .logo{width:100px;
+    height: 100px;
+}
+.login{
+    width: 100px;
     height: 100px;
 }
 }
@@ -84,8 +96,11 @@ footer{
 .cafecarodms{
     width: 300px;
 }
+.chachines{
+    width: 200px;
+}
 .descricao{
-    color: chocolate;
+    color: rgb(0, 0, 0);
     font-size: x-large;
 }
 .preco{
@@ -97,13 +112,10 @@ footer{
     background-color: rgb(255, 208, 78);
     width: 50%;
     text-decoration: none;
-    height: 35px;
+    height: 40px;
     border-radius: 10px;
 }
-.saibamais{
-    width: 100px;
-    height: 100px;
-}
+
 .letra_botao{
  display: block;
  text-align: center;
